@@ -1,36 +1,100 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Canimal Token Project
 
-## Getting Started
+Canimal Token is an ICO (Initial Coin Offering) project built on the Binance Smart Chain testnet. This project demonstrates the integration of smart contracts with a modern React frontend, allowing users to purchase Canimal tokens using test BNB (tBNB).
 
-First, run the development server:
+![Canimal Token Project Screenshot](./screenshots/canimal-token-screenshot.png)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## Features
+
+- Connect wallet using RainbowKit
+- Display user's tBNB and Canimal token balances
+- Purchase Canimal tokens with tBNB
+- Real-time transaction status updates
+- Responsive design for various screen sizes
+
+## Technologies Used
+
+- Next.js
+- React
+- Wagmi
+- RainbowKit
+- Solidity (for smart contracts)
+- Binance Smart Chain (testnet)
+
+## Prerequisites
+
+- Node.js (v14 or later)
+- Yarn or npm
+- MetaMask or any other wallet compatible with Binance Smart Chain testnet
+
+## Installation
+
+1. Clone the repository:
+   ```
+   git clone https://github.com/rialdytrike/canimal-ico.git
+   cd canimal-ico
+   ```
+
+2. Install dependencies:
+   ```
+   yarn install
+   # or
+   npm install
+   ```
+
+3. modify contract address and contract abi  in page.js:
+   ```
+   CONTRACT_ADDRESS=your_contract_address_here
+   CONTRACT_ABI=your_contract_abi
+   ```
+
+4. Start the development server:
+   ```
+   yarn dev
+   # or
+   npm run dev
+   ```
+
+5. Open [http://localhost:3000](http://localhost:3000) in your browser to see the application.
+
+## Usage
+
+1. Connect your wallet using the "Connect Wallet" button.
+2. Ensure you have some test BNB (tBNB) in your wallet. You can get free tBNB from the [BSC Testnet Faucet](https://testnet.binance.org/faucet-smart).
+3. Enter the amount of tBNB you want to spend in the input field.
+4. Click the "Buy Canimal Token" button to purchase tokens.
+5. Confirm the transaction in your wallet.
+6. Wait for the transaction to be processed. The UI will update to show the transaction status.
+7. Once the transaction is successful, your Canimal token balance will be updated.
+
+## Smart Contract
+
+The Canimal Token smart contract is deployed on the Binance Smart Chain testnet. The contract address is:
+
+```
+0xC86CAD54Ba2F3F66d9Ee8256ecFE5a63d6eAeea7
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+You can view the contract on [BscScan Testnet](https://testnet.bscscan.com/address/your_contract_address_here).
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## Contributing
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Contributions are welcome! Please feel free to submit a Pull Request.
 
-## Learn More
+## License
 
-To learn more about Next.js, take a look at the following resources:
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Acknowledgments
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- [Wagmi](https://wagmi.sh/) for React Hooks for Ethereum
+- [RainbowKit](https://www.rainbowkit.com/) for wallet connection
+- [OpenZeppelin](https://openzeppelin.com/) for secure smart contract development
 
-## Deploy on Vercel
+## Contact
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+If you have any questions, feel free to reach out to [Your Name] at [your.email@example.com].
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+---
+
+Don't forget to star ⭐ this repo if you find it useful!
