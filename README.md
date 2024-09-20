@@ -41,14 +41,17 @@ Canimal Token is an ICO (Initial Coin Offering) project built on the Binance Sma
    # or
    npm install
    ```
-
-3. modify contract address and contract abi  in page.js:
+3. Create your token at remix.ethereum.org using provided solidity file
+   ```
+   use 0.8.26 solidity compiler
+   ```
+4. Modify contract address and contract abi in page.js:
    ```
    CONTRACT_ADDRESS=your_contract_address_here
    CONTRACT_ABI=your_contract_abi
    ```
 
-4. Start the development server:
+5. Start the development server:
    ```
    yarn dev
    # or
@@ -70,15 +73,13 @@ Canimal Token is an ICO (Initial Coin Offering) project built on the Binance Sma
 ## Smart Contract
 
 The Canimal Token smart contract is deployed on the Binance Smart Chain testnet. The contract address is:
-```
-use 0.8.26 solidity compiler
-```
+
 
 ```
 0xC86CAD54Ba2F3F66d9Ee8256ecFE5a63d6eAeea7
 ```
 
-You can view the contract on [BscScan Testnet](https://testnet.bscscan.com/address/your_contract_address_here).
+You can view the contract on [BscScan Testnet](https://testnet.bscscan.com/address/0xC86CAD54Ba2F3F66d9Ee8256ecFE5a63d6eAeea7).
 
 ## Contributing
 
