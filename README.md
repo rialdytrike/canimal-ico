@@ -70,6 +70,9 @@ Canimal Token is an ICO (Initial Coin Offering) project built on the Binance Sma
 ## Smart Contract
 
 The Canimal Token smart contract is deployed on the Binance Smart Chain testnet. The contract address is:
+```
+use 0.8.26 solidity compiler
+```
 
 ```
 0xC86CAD54Ba2F3F66d9Ee8256ecFE5a63d6eAeea7
